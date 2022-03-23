@@ -53,7 +53,7 @@ weatherForm.addEventListener('submit',(e)=>{
           console.log('Data : ',data.ForecastData)
           console.log('Data : ',data.GeocodeData, data.location,data.longitude)
           message1.textContent=data.ForecastData.timezone
-          message2.textContent=data.location
+          message2.textContent=data.location + "  " +data.ForecastData.cloud
     }
   })
 

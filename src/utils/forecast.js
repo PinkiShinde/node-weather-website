@@ -13,7 +13,8 @@ const forecast = (lat,long,callbacks)=>{
             callbacks(undefined,{
           timezone : response.body.data[0].timezone,
           countrycode : response.body.data[0].country_code,
-          weather_description : response.body.data[0].weather.description
+          weather_description : response.body.data[0].weather.description,
+          cloud : response.body.data[0].clouds
 
         })
     }
